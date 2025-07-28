@@ -1,0 +1,145 @@
+version 2
+run Default-0-20250728-22:28:28-6579
+attr configname Default
+attr datetime 20250728-22:28:28
+attr experiment Default
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvarsf ""
+attr measurement ""
+attr network sample
+attr processid 6579
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+param *.playgroundSizeX 10000m
+param *.playgroundSizeY 10000m
+param *.playgroundSizeZ 500m
+param *.annotations.draw true
+param *.obstacles.debug false
+param *.manager.updateInterval 1s
+param *.manager.host "\"localhost\""
+param *.manager.port 9999
+param *.manager.autoShutdown true
+param *.manager.launchConfig "xmldoc(\"sample.launchd.xml\")"
+param *.manager.configFile "\"osm.sumocfg\""
+param *.manager.trafficLightModuleType "\"org.car2x.veins.nodes.TrafficLight\""
+param *.manager.numTrafficLights 0
+param *.manager.sumocmd "\"sumo\""
+param *.tls[*].mobility.x 0
+param *.tls[*].mobility.y 0
+param *.tls[*].mobility.z 3
+param *.tls[*].applType "\"org.car2x.veins.modules.application.traci.TraCIDemoTrafficLightApp\""
+param *.tls[*].logicType "\"org.car2x.veins.modules.world.traci.trafficLight.logics.TraCITrafficLightSimpleLogic\""
+param *.rsu[0].mobility.x 100
+param *.rsu[0].mobility.y 100
+param *.rsu[0].mobility.z 3
+param *.rsu[*].applType "\"TraCIDemoRSU11p\""
+param *.rsu[*].appl.headerLength "80 bit"
+param *.rsu[*].appl.sendBeacons false
+param *.rsu[*].appl.dataOnSch false
+param *.rsu[*].appl.beaconInterval 1s
+param *.rsu[*].appl.beaconUserPriority 7
+param *.rsu[*].appl.dataUserPriority 5
+param *.rsu[*].nic.phy80211p.antennaOffsetZ "0 m"
+param *.connectionManager.sendDirect true
+param *.connectionManager.maxInterfDist 2600m
+param *.connectionManager.drawMaxIntfDist false
+param *.**.nic.mac1609_4.useServiceChannel false
+param *.**.nic.mac1609_4.txPower 20mW
+param *.**.nic.mac1609_4.bitrate 6Mbps
+param *.**.nic.phy80211p.minPowerLevel -110dBm
+param *.**.nic.phy80211p.useNoiseFloor true
+param *.**.nic.phy80211p.noiseFloor -98dBm
+param *.**.nic.phy80211p.decider "xmldoc(\"config.xml\")"
+param *.**.nic.phy80211p.analogueModels "xmldoc(\"config.xml\")"
+param *.**.nic.phy80211p.usePropagationDelay true
+param *.**.nic.phy80211p.antenna "xmldoc(\"antenna.xml\", \"/root/Antenna[@id='monopole']\")"
+param *.node[*].nic.phy80211p.antennaOffsetY "0 m"
+param *.node[*].nic.phy80211p.antennaOffsetZ "1.895 m"
+param *.node[*].applType "\"MyVeinsApp\""
+param *.node[*].appl.headerLength "80 bit"
+param *.node[*].appl.sendBeacons false
+param *.node[*].appl.dataOnSch false
+param *.node[*].appl.beaconInterval 1s
+param *.node[*].veinsmobility.x 0
+param *.node[*].veinsmobility.y 0
+param *.node[*].veinsmobility.z 0
+param *.node[*].veinsmobility.setHostSpeed false
+param *.node[*0].veinsmobility.accidentCount 0
+param *.node[*0].veinsmobility.accidentStart 73s
+param *.node[*0].veinsmobility.accidentDuration 50s
+
+scalar sample.node[0].appl generatedWSMs 0
+scalar sample.node[0].appl receivedWSMs 0
+scalar sample.node[0].appl generatedBSMs 0
+scalar sample.node[0].appl receivedBSMs 0
+scalar sample.node[0].appl generatedWSAs 0
+scalar sample.node[0].appl receivedWSAs 0
+scalar sample.node[0].nic.phy80211p busyTime 0
+scalar sample.node[0].nic.mac1609_4 ReceivedUnicastPackets 0
+scalar sample.node[0].nic.mac1609_4 ReceivedBroadcasts 0
+scalar sample.node[0].nic.mac1609_4 SentPackets 0
+scalar sample.node[0].nic.mac1609_4 SentAcknowledgements 0
+scalar sample.node[0].nic.mac1609_4 RetriesExceeded 0
+scalar sample.node[0].nic.mac1609_4 SNIRLostPackets 0
+scalar sample.node[0].nic.mac1609_4 RXTXLostPackets 0
+scalar sample.node[0].nic.mac1609_4 TotalLostPackets 0
+scalar sample.node[0].nic.mac1609_4 DroppedPacketsInMac 0
+scalar sample.node[0].nic.mac1609_4 TooLittleTime 0
+scalar sample.node[0].nic.mac1609_4 TimesIntoBackoff 0
+scalar sample.node[0].nic.mac1609_4 SlotsBackoff 0
+scalar sample.node[0].nic.mac1609_4 NumInternalContention 0
+scalar sample.node[0].nic.mac1609_4 totalBusyTime 0
+scalar sample.node[0].nic.mac1609_4 retriesExceeded:count 0
+attr source org_car2x_veins_modules_mac_sigRetriesExceeded
+scalar sample.node[0].nic.mac1609_4 sentAcks:count 0
+attr source org_car2x_veins_modules_mac_sigSentAck
+scalar sample.node[0].nic.mac1609_4 sentPackets:count 0
+attr source org_car2x_veins_modules_mac_sigSentPacket
+scalar sample.node[0].nic.mac1609_4 collisions:count 0
+attr source org_car2x_veins_modules_mac_sigCollision
+scalar sample.node[0].nic.mac1609_4 channelBusy:timeavg 0
+attr source org_car2x_veins_modules_mac_sigChannelBusy
+scalar sample.node[0].veinsmobility startTime 1
+scalar sample.node[0].veinsmobility totalTime 58
+scalar sample.node[0].veinsmobility stopTime 60
+scalar sample.node[0].veinsmobility minSpeed 2.450429067295
+scalar sample.node[0].veinsmobility maxSpeed 24.771920582456
+scalar sample.node[0].veinsmobility totalDistance 805.30627736485
+scalar sample.node[0].veinsmobility totalCO2Emission 319.27500665788
+scalar sample.manager roiArea 0
+scalar sample.rsu[0].appl generatedWSMs 0
+scalar sample.rsu[0].appl receivedWSMs 0
+scalar sample.rsu[0].appl generatedBSMs 0
+scalar sample.rsu[0].appl receivedBSMs 0
+scalar sample.rsu[0].appl generatedWSAs 0
+scalar sample.rsu[0].appl receivedWSAs 0
+scalar sample.rsu[0].nic.phy80211p busyTime 0
+scalar sample.rsu[0].nic.mac1609_4 ReceivedUnicastPackets 0
+scalar sample.rsu[0].nic.mac1609_4 ReceivedBroadcasts 0
+scalar sample.rsu[0].nic.mac1609_4 SentPackets 0
+scalar sample.rsu[0].nic.mac1609_4 SentAcknowledgements 0
+scalar sample.rsu[0].nic.mac1609_4 RetriesExceeded 0
+scalar sample.rsu[0].nic.mac1609_4 SNIRLostPackets 0
+scalar sample.rsu[0].nic.mac1609_4 RXTXLostPackets 0
+scalar sample.rsu[0].nic.mac1609_4 TotalLostPackets 0
+scalar sample.rsu[0].nic.mac1609_4 DroppedPacketsInMac 0
+scalar sample.rsu[0].nic.mac1609_4 TooLittleTime 0
+scalar sample.rsu[0].nic.mac1609_4 TimesIntoBackoff 0
+scalar sample.rsu[0].nic.mac1609_4 SlotsBackoff 0
+scalar sample.rsu[0].nic.mac1609_4 NumInternalContention 0
+scalar sample.rsu[0].nic.mac1609_4 totalBusyTime 0
+scalar sample.rsu[0].nic.mac1609_4 retriesExceeded:count 0
+attr source org_car2x_veins_modules_mac_sigRetriesExceeded
+scalar sample.rsu[0].nic.mac1609_4 sentAcks:count 0
+attr source org_car2x_veins_modules_mac_sigSentAck
+scalar sample.rsu[0].nic.mac1609_4 sentPackets:count 0
+attr source org_car2x_veins_modules_mac_sigSentPacket
+scalar sample.rsu[0].nic.mac1609_4 collisions:count 0
+attr source org_car2x_veins_modules_mac_sigCollision
+scalar sample.rsu[0].nic.mac1609_4 channelBusy:timeavg 0
+attr source org_car2x_veins_modules_mac_sigChannelBusy
+
